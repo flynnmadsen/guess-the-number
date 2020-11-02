@@ -1,22 +1,9 @@
-const secretNumber = (RandomInt)
+const message = document.getElementById("message")
+const guess = document.getElementById("user-input")
 
-function RandomInt()
-{
-    return Math.floor(Math.random() * 101)
+let secretNumber = randomInt(100)
 
+function randomInt(max) {
+    return Math.floor(Math.random()* (max + 1))
 }
-console.log(RandomInt())
-
-function getUserGuess() {
-    const stringValue = document.getElementById("user-input").value
-    return parseInt(stringValue, 10)
-
-}
-
-document.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-        const guess = getUserGuess()
-        console.log(guess)
-    }
-})
-
+console.log(secretNumber)
