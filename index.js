@@ -5,7 +5,7 @@ let secretNumber = randomInt(100)
 
 document.addEventListener("keyup" , function (event) {
     if (event.key === "Enter") {
-        const guess = getUserInput
+        const guess = getUserInput()
 
       if (guess > secretNumber) {
           setMessage("Too high!")
